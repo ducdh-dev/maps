@@ -60,7 +60,7 @@ type Props = {
 
 type NativeProps = Props;
 
-class RasterDemSource extends AbstractSource<Props, NativeProps> {
+class RasterDemSource extends AbstractSource {
   static defaultProps = {
     id: MapboxGL.StyleSource.DefaultSourceID,
   };

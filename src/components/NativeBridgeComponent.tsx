@@ -11,7 +11,7 @@ export type RNMBEvent<PayloadType = { [key: string]: string }> = {
 
 const NativeBridgeComponent = <
   Props extends object,
-  BaseComponent extends new (...ags: any[]) => React.Component<Props>,
+  BaseComponent extends new (...ags: any[]) => React.Component,
 >(
   Base: BaseComponent,
   nativeModuleName: string,

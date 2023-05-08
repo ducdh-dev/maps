@@ -125,7 +125,7 @@ type Props = BaseProps & {
  * as with PointAnnotation child views are rendered onto a bitmap
  */
 class PointAnnotation extends NativeBridgeComponent(
-  React.PureComponent<Props>,
+  React.PureComponent,
   NATIVE_MODULE_NAME,
 ) {
   static defaultProps = {

@@ -61,8 +61,8 @@ type Props = ViewProps & {
  * This component has no dedicated `onPress` method. Instead, you should handle gestures
  * with the React views passed in as `children`.
  */
-class MarkerView extends React.PureComponent<Props> {
-  static defaultProps: Partial<Props> = {
+class MarkerView extends React.PureComponent {
+  static defaultProps: Partial = {
     anchor: { x: 0.5, y: 0.5 },
     allowOverlap: false,
     isSelected: false,

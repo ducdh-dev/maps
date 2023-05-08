@@ -77,7 +77,7 @@ type NativeProps = Props;
  * The location of and metadata about the tiles are defined either by an option dictionary
  * or by an external file that conforms to the TileJSON specification.
  */
-class RasterSource extends AbstractSource<Props, NativeProps> {
+class RasterSource extends AbstractSource {
   static defaultProps: Props = {
     id: MapboxGL.StyleSource.DefaultSourceID,
   };

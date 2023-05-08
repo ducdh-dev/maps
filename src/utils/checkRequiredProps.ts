@@ -4,7 +4,7 @@ type RequiredKeys<T> = {
 
 export default function checkRequiredProps<
   Props extends { [key: string]: unknown },
->(tag: string, props: Props, required: RequiredKeys<Props>[]) {
+>(tag: string, props: Props, required: RequiredKeys[]) {
   for (const key of required) {
     if (props[key] === undefined) {
       console.error(

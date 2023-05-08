@@ -100,7 +100,7 @@ type NativeProps = Props; // Omit<Props, 'children'>;
  * The location of and metadata about the tiles are defined either by an option dictionary or by an external file that conforms to the TileJSON specification.
  */
 class VectorSource extends NativeBridgeComponent(
-  AbstractSource<Props, NativeProps>,
+  AbstractSource,
   NATIVE_MODULE_NAME,
 ) {
   static defaultProps = {

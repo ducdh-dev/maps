@@ -87,7 +87,7 @@ class Annotation extends React.Component<Props, AnnotationState> {
     }
   }
 
-  _getShapeFromProps(props: Partial<Props> = {}): Point {
+  _getShapeFromProps(props: Partial = {}): Point {
     const lng = props.coordinates?.[0] || 0;
     const lat = props.coordinates?.[1] || 0;
     return { type: 'Point', coordinates: [lng, lat] };

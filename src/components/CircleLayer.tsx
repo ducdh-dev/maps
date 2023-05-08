@@ -96,7 +96,7 @@ class CircleLayer extends AbstractLayer<Props, NativeTypeProps> {
   }
 }
 
-const RCTMGLCircleLayer: HostComponent<Props> =
+const RCTMGLCircleLayer: HostComponent =
   requireNativeComponent<NativeTypeProps>(NATIVE_MODULE_NAME);
 
 export default CircleLayer;

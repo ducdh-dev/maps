@@ -88,7 +88,7 @@ type Props = Omit<ViewProps, 'style'> & {
 /**
  *  Callout that displays information about a selected annotation near the annotation.
  */
-class Callout extends React.PureComponent<Props> {
+class Callout extends React.PureComponent {
   get _containerStyle() {
     const style = [
       {
